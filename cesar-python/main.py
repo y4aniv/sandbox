@@ -1,5 +1,4 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
-key = 3
 
 def CesarEncrypt(text, key):
     """Encrypte le message en utilisant le chiffrement César
@@ -38,19 +37,20 @@ def CesarDecrypt(text, key):
 # if choice == 1:
 #     print("")
 #     message = input("Message >>> ")
-#     print(f"Message encrypté >>> {CesarEncrypt(message, key)}")
+#     key = int(input("Clé >>> "))
+#     print(f"\nMessage encrypté >>> {CesarEncrypt(message, key)}")
 
 # elif choice == 2:
 #     print("")
 #     message = input("Message >>> ")
-#     print(f"Message decrypté >>> {CesarDecrypt(message, key)}")
+#     key = int(input("Clé >>> "))
+#     print(f"\nMessage decrypté >>> {CesarDecrypt(message, key)}")
 
 
-## Ces tests unitaires fonctionne uniquement si key = 3
-assert CesarEncrypt("abc", key) == "def"
-assert CesarEncrypt("xyz", key) == "abc"
-assert CesarEncrypt("coucou", key) == "frxfrx"
+assert CesarEncrypt("abc", 4) == "efg"
+assert CesarEncrypt("xyz", 9) == "ghi"
+assert CesarEncrypt("Coucou, comment ça va ?", 5) == "Ctzhtz, htrrjsy çf af ?"
 
-assert CesarDecrypt("def", key) == "abc"
-assert CesarDecrypt("abc", key) == "xyz"
-assert CesarDecrypt("frxfrx", key) == "coucou"
+assert CesarDecrypt("efg", 4) == "abc"
+assert CesarDecrypt("ghi", 9) == "xyz"
+assert CesarDecrypt("Ctzhtz, htrrjsy çf af ?", 5) == "Coucou, comment ça va ?"
