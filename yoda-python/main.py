@@ -6,14 +6,14 @@ def SVC_to_CSV(SVC):
     Sortie: CSV (str)
     """
 
-    s1 = SVC.index(" ")
-    s2 = SVC[s1+1:].index(" ")+s1+1
+    space1 = SVC.index(" ")
+    space2 = SVC[space1+1:].index(" ") + space1 + 1
 
-    Sujet = SVC[0:s1]
-    Verbe = SVC[s1+1:s2]
-    Complement = SVC[s2+1:].capitalize()
+    sujet = SVC[0:space1]
+    verbe = SVC[space1+1:space2]
+    complement = SVC[space2+1:].capitalize()
 
-    return f'{Complement} {Sujet} {Verbe}'
+    return f'{complement} {sujet} {verbe}'
 
 # SVC = input("Phrase (Sujet Verbe Complément) >>> ")
 # print(f"Phrase (Complément Sujet Verbe) >>> {SVC_to_CSV(SVC)}")
