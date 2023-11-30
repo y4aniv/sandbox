@@ -1,0 +1,3 @@
+Scores des joueurs :
+Alice : 25001
+Bob : 1998
