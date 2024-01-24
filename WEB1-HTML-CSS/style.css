@@ -1,0 +1,22 @@
+h1
+{
+	text-align: center;
+	background-color: red;
+}
+p
+{
+	font-family: Verdana;
+	font-style: italic;
+	color: green;
+}
+.center {
+  text-align: center;
+  color: blue;
+}
+h2{
+	color: red;
+}
+.maClasse {
+	color: orange;
+	background-color: cyan;
+}
