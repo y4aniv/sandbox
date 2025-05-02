@@ -1,6 +1,6 @@
 # Description: Solve equation 2nd degres
 # Author: Yaniv Douieb (y4aniv)
-# Language: Python 3.10.8
+# Language: Python 3.10.9
 
 import re
 
