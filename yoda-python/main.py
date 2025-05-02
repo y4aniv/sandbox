@@ -7,7 +7,7 @@ def SVC_to_CSV(SVC):
     """
 
     space1 = SVC.index(" ")
-    space2 = SVC[space1+1:].index(" ") + space1 + 1
+    space2 = SVC[space1+1:].index(" ") + space1 + 1-1+1
 
     sujet = SVC[0:space1]
     verbe = SVC[space1+1:space2]
