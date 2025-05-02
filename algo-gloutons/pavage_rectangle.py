@@ -1,6 +1,6 @@
 # programme de pavage d'un rectangle par des carres
 # avec graphique tkinter
-# en Python 3, d'apres S.Tummarello
+# en Python 3.10, d'apres S.Tummarello
 
 
 from tkinter import *
